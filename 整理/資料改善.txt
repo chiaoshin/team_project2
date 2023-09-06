@@ -22,4 +22,116 @@
 5. 危險海域
 敘述跟經緯度，假設經緯度有30個危險海域，那敘述資料是不是有誤，修正【危險海域(敘述)】107筆資料，重複的，只要一筆就好，不用這麼多。
 
+6.新增csv資料蒐集20筆，尋找潛伴欄位(使用者名稱-可以從討論區註冊帳號名稱一樣,出團日,地點,金額,email-可以從討論區註冊帳號Eamil一樣,潛水類型,有無考證,人數限制,目前人數)
+
+目前假資料有
+Partner::create([
+            "name" => "王曉明",
+            "group_time" => "2023-12-05",
+            "location" => "小琉球",
+            "money" => 400,
+            "email" => "C1091931100@gmail.com",
+            "type" => "浮潛",
+            "license" => "無",
+            "people_limit" => 8,
+            "people_number" => 4,
+        ]);
+
+        Partner::create([
+            "name" => "昭小美",
+            "group_time" => "2023-09-10",
+            "location" => "綠島",
+            "money" => 14000,
+            "email" => "C1091931101@gmail.com",
+            "type" => "自由潛水",
+            "license" => "有",
+            "people_limit" => 4,
+            "people_number" => 1,
+        ]);
+
+        Partner::create([
+            "name" => "王莉莉",
+            "group_time" => "2023-08-15",
+            "location" => "墾丁",
+            "money" => 2500,
+            "email" => "C1091931102@gmail.com",
+            "type" => "水肺潛水",
+            "license" => "無",
+            "people_limit" => 8,
+            "people_number" => 6,
+        ]);
+
+        Partner::create([
+            "name" => "陳明明",
+            "group_time" => "2023-08-20",
+            "location" => "小琉球",
+            "money" => 400,
+            "email" => "C1091931103@gmail.com",
+            "type" => "浮潛",
+            "license" => "無",
+            "people_limit" => 10,
+            "people_number" => 2,
+        ]);
+
+        Partner::create([
+            "name" => "林戚戚",
+            "group_time" => "2023-08-22",
+            "location" => "蘭嶼",
+            "money" => 12000,
+            "email" => "C109193104@gmail.com",
+            "type" => "水肺潛水",
+            "license" => "有",
+            "people_limit" => 8,
+            "people_number" => 5,
+        ]);
+
+        Partner::create([
+            "name" => "鄭美美",
+            "group_time" => "2023-08-24",
+            "location" => "綠島",
+            "money" => 400,
+            "email" => "C109193105@gmail.com",
+            "type" => "浮潛",
+            "license" => "無",
+            "people_limit" => 10,
+            "people_number" => 4,
+        ]);
+
+        Partner::create([
+            "name" => "何東東",
+            "group_time" => "2023-11-08",
+            "location" => "墾丁",
+            "money" => 15000,
+            "email" => "C109193106@gmail.com",
+            "type" => "自由潛水",
+            "license" => "有",
+            "people_limit" => 6,
+            "people_number" => 3,
+        ]);
+
+        Partner::create([
+            "name" => "胡喃喃",
+            "group_time" => "2023-10-01",
+            "location" => "小琉球",
+            "money" => 2500,
+            "email" => "C109193107@gmail.com",
+            "type" => "水肺潛水",
+            "license" => "無",
+            "people_limit" => 8,
+            "people_number" => 6,
+        ]);
+
+        Partner::create([
+            "name" => "曾咚咚",
+            "group_time" => "2023-08-25",
+            "location" => "綠島",
+            "money" => 13000,
+            "email" => "C109193108@gmail.com",
+            "type" => "自由潛水",
+            "license" => "有",
+            "people_limit" => 6,
+            "people_number" => 4,
+        ]);
+將上述假資料，整理至csv當中。
+
 【以上灌python，統一csv存成CSV utf-8檔，才能正常運作】
